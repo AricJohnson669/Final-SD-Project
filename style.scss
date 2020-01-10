@@ -1,0 +1,117 @@
+@import "components/animation";
+
+/* Styling my titles/headers for my web pages. */
+header{
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 21%;
+    text-align: center;
+    color: whitesmoke;
+    animation: fade-in-title 6s 1;
+    -webkit-animation: fade-in-title 6s 1;
+    -ms-animation: fade-in-title 6s 1;
+    -moz-animation: fade-in-title 6s 1;
+}
+/* Styling my "Main Page/Home" subtitle. */
+main{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0%;
+    text-align: center;
+    color: whitesmoke;
+    animation: fade-in 6s 1;
+    -webkit-animation: fade-in 6s 1;
+    -ms-animation: fade-in 6s 1;
+    -moz-animation: fade-in 6s 1;
+}
+/* Styling my navigation menu for my web pages. */
+nav{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke; 
+    padding-top: 10px;
+    border-right: 1px solid whitesmoke;
+    animation: fade-in-nav 6s 1;
+    -webkit-animation: fade-in-nav 6s 1;
+    -ms-animation: fade-in-nav 6s 1;
+    -moz-animation: fade-in-nav 6s 1;
+}
+/* Styling my nav button 1 on my web pages. */
+#nav-btn{
+    height: 50px;
+    width: 50px;
+    float: right;
+    display: block;
+    cursor: pointer;
+    color: whitesmoke;
+    text-decoration: none;
+    animation: fade-in-nav 6s 1;
+    -webkit-animation: fade-in-nav 6s 1;
+    -ms-animation: fade-in-nav 6s 1;
+    -moz-animation: fade-in-nav 6s 1;
+}
+/* Styling my easter egg button. */
+.easter-egg {
+    font-size: 20px;
+    cursor: pointer;
+    color: whitesmoke;
+    text-decoration: none;
+    animation: fade-in-nav 6s 1;
+    -webkit-animation: fade-in-nav 6s 1;
+    -ms-animation: fade-in-nav 6s 1;
+    -moz-animation: fade-in-nav 6s 1;
+}
+.nav-divider {
+    font-size: 20px;
+    cursor: pointer;
+    color: whitesmoke;
+    text-decoration: none;
+    animation: fade-in-nav 6s 1;
+    -webkit-animation: fade-in-nav 6s 1;
+    -ms-animation: fade-in-nav 6s 1;
+    -moz-animation: fade-in-nav 6s 1;
+}
+/* Styling my "Top" button on my gallery page. */
+.top-button {
+    font-size: 20px;
+    cursor: pointer;
+    color: whitesmoke;
+    text-decoration: none;
+    animation: fade-in-nav 6s 1;
+    -webkit-animation: fade-in-nav 6s 1;
+    -ms-animation: fade-in-nav 6s 1;
+    -moz-animation: fade-in-nav 6s 1;
+}
+/* Styling the navigation menu for my transition. */
+.un a{
+    font-size: 20px;
+    cursor: pointer;
+    color: whitesmoke;
+    text-decoration: none;
+    position: relative;
+}
+/* When you hover over one of my navigation elements and underline will apear form the left to the right. 
+   This class determines what the underline will do when I hover over. */
+.un a:after{
+    content: '';
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background: whitesmoke;
+    transition: 0.5s;
+}
+/* Whilst hovering the width will be set to 100%. */
+.un a:hover:after, .un a:focus:after{
+    width: 100%;
+}
+/* A block is set around my text making the transaition possible. */
+.un a.block{
+    display: block;
+    padding: 0.5em;
+}
+/* When hovering over the block the background colour of the underline changes to whitesmoke. */
+.un a.block:hover, .un a:hover:after{
+    background: whitesmoke;
+}

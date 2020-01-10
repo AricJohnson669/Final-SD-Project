@@ -1,0 +1,140 @@
+/* This is the animation that turns my title from "invisible" to "visible" (black to white). 
+   This animation also changes the font size from 60px to 80px. Under the first key farame 
+   of every one of my animations are the -webkit-, -ms-, and -moz- variations which insure 
+   that my animation will be able to be viewed by different types of browsers. */
+   @keyframes fade-in-title{
+    from{
+        opacity: 0%;
+        font-size: 60px;
+    }
+    to{
+        color: whitesmoke;
+        opacity: 100%;
+        font-size: 80px;
+    }
+}
+@-webkit-keyframes fade-in-title{
+    from{
+        opacity: 0%;
+        font-size: 60px;
+    }
+    to{
+        color: whitesmoke;
+        opacity: 100%;
+        font-size: 80px;
+    }
+}
+@-ms-keyframes fade-in-title{
+    from{
+        opacity: 0%;
+        font-size: 8px;
+    }
+    to{
+        color: whitesmoke;
+        opacity: 100%;
+        font-size: 15px;
+    }
+}
+@-moz-keyframes fade-in-title{
+    from{
+        opacity: 0%;
+        font-size: 8px;
+    }
+    to{
+        color: whitesmoke;
+        opacity: 100%;
+        font-size: 15px;
+    }
+}
+/* This is the animation that turns my subtitle from "invisible" to "visible" (black to white). 
+   This animation also changes the font size from 8px to 15px. */
+@keyframes fade-in{
+    from{
+        opacity: 0%;
+        font-size: 8px;
+    }
+    to{
+        color: whitesmoke;
+        opacity: 100%;
+        font-size: 15px;
+    }
+}
+@-webkit-keyframes fade-in{
+    from{
+        opacity: 0%;
+        font-size: 8px;
+    }
+    to{
+        color: whitesmoke;
+        opacity: 100%;
+        font-size: 15px;
+    }
+}
+@-ms-keyframes fade-in{
+    from{
+        opacity: 0%;
+        font-size: 8px;
+    }
+    to{
+        color: whitesmoke;
+        opacity: 100%;
+        font-size: 15px;
+    }
+}
+@-moz-keyframes fade-in{
+    from{
+        opacity: 0%;
+        font-size: 8px;
+    }
+    to{
+        color: whitesmoke;
+        opacity: 100%;
+        font-size: 15px;
+    }
+}
+/* This is the animation that turns my subtitle from "invisible" to "visible" (black to white). 
+   This animation also changes the font size from 8px to 20px. */
+@keyframes fade-in-nav{
+    from{
+        opacity: 0%;
+        font-size: 8px;
+    }
+    110%{
+        color: whitesmoke;
+        opacity: 100%;
+        font-size: 15px;
+    }
+}
+@-webkit-keyframes fade-in-nav{
+    from{
+        opacity: 0%;
+        font-size: 8px;
+    }
+    110%{
+        color: whitesmoke;
+        opacity: 100%;
+        font-size: 15px;
+    }
+}
+@-ms-keyframes fade-in-nav{
+    from{
+        opacity: 0%;
+        font-size: 8px;
+    }
+    110%{
+        color: whitesmoke;
+        opacity: 100%;
+        font-size: 15px;
+    }
+}
+@-moz-keyframes fade-in-nav{
+    from{
+        opacity: 0%;
+        font-size: 8px;
+    }
+    110%{
+        color: whitesmoke;
+        opacity: 100%;
+        font-size: 15px;
+    }
+}

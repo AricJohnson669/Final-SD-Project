@@ -1,0 +1,62 @@
+Website: 
+
+	Home Page:
+		
+		Nav Bar:
+			
+			- Home
+			- Portfolio
+			- Testimonials
+			- Find Us
+			- Products
+			- Vegetables
+			   - Drop down
+			     - Herbs
+			     - Peppers
+			     - Potatoes
+			     - Tomatoes
+			- More
+			  - Drop down
+			    - Special Events
+			    - Hours
+			    - Farmers' Market
+	
+	Portfolio: 
+
+		- Pictures of the flower selection as well as 
+		  work that has been done for clients
+
+	Testimonials: 
+
+		- Testimonials from cousomers
+
+	Find Us: 
+
+		- Iframe with google maps directions 
+		- Phone Number 
+		- Cell(phone) Number
+		- Email 
+		- Address
+
+	Products:
+
+		- List of products for sale
+
+	Vegetables:
+	
+		- Shows list of types of vegetables
+		- If drop down for certain vegetable is clicked 
+		  list of chosen vegetables will be shown
+	
+	More:
+		
+		- If drop down for certain option in the more nav
+		  selector corresponding information about the chosen
+  		  selector will be shown
+
+
+Adititional Changes: 
+
+	- Put the Rainbow Mill Garden logo in top let corner
+	- Change layout and design completely
+	- 	
