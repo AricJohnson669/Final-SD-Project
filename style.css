@@ -78,6 +78,102 @@
   }
 }
 
+/* Fadding aniation of my slideshow */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #252222;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: unset;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("./images/rainbow-mill-gardens.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/rainbow-mill-gardens.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 /* Styling my titles/headers for my web pages. */
 header {
   font-size: 80px;
@@ -93,7 +189,7 @@ header {
 
 /* Styling my "Main Page/Home" subtitle. */
 main {
-  font-size: 15px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 0%;
   text-align: center;
@@ -105,16 +201,8 @@ main {
 }
 
 /* Styling my navigation menu for my web pages. */
-nav {
-  margin-left: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: whitesmoke;
-  padding-top: 10px;
-  border-right: 1px solid whitesmoke;
-  animation: fade-in-nav 6s 1;
-  -webkit-animation: fade-in-nav 6s 1;
-  -ms-animation: fade-in-nav 6s 1;
-  -moz-animation: fade-in-nav 6s 1;
+.title {
+  margin-bottom: 10px;
 }
 
 /* Styling my nav button 1 on my web pages. */
@@ -123,18 +211,6 @@ nav {
   width: 50px;
   float: right;
   display: block;
-  cursor: pointer;
-  color: whitesmoke;
-  text-decoration: none;
-  animation: fade-in-nav 6s 1;
-  -webkit-animation: fade-in-nav 6s 1;
-  -ms-animation: fade-in-nav 6s 1;
-  -moz-animation: fade-in-nav 6s 1;
-}
-
-/* Styling my easter egg button. */
-.easter-egg {
-  font-size: 20px;
   cursor: pointer;
   color: whitesmoke;
   text-decoration: none;
@@ -167,42 +243,65 @@ nav {
   -moz-animation: fade-in-nav 6s 1;
 }
 
-/* Styling the navigation menu for my transition. */
-.un a {
-  font-size: 20px;
-  cursor: pointer;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Styling the slideshow containers on my website. */
+.slideshow-container {
+  padding-top: 8%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  font-size: 16px;
   color: whitesmoke;
   text-decoration: none;
-  position: relative;
 }
 
-/* When you hover over one of my navigation elements and underline will apear form the left to the right. 
-   This class determines what the underline will do when I hover over. */
-.un a:after {
-  content: '';
-  height: 3px;
+/* Hiding the images in my slideshow by default */
+.mySLides {
+  display: none;
+}
+
+/* Next and Previous buttons for my slideshow */
+.prev, .next {
+  cursor: pointer;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  background: whitesmoke;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-/* Whilst hovering the width will be set to 100%. */
-.un a:hover:after, .un a:focus:after {
+/* Styling the caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12xp;
+  position: absolute;
+  bottom: 8px;
   width: 100%;
+  text-align: center;
 }
 
-/* A block is set around my text making the transaition possible. */
-.un a.block {
-  display: block;
-  padding: 0.5em;
-}
-
-/* When hovering over the block the background colour of the underline changes to whitesmoke. */
-.un a.block:hover, .un a:hover:after {
-  background: whitesmoke;
+/* Styling the slide indicator text */
+.slideIndicator {
+  padding-top: 17%;
+  padding-left: 2%;
+  color: #f2f2f2;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
 }
 /*# sourceMappingURL=style.css.map */

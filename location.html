@@ -1,0 +1,53 @@
+<!--
+    Name: Aric Johnson
+    Course: Web Development (CSS)
+    Teacher: Mr.Hardman
+    School: Pembina Trails Early College (PTEC)
+    Date Last Modified: 11/17/2019
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rainbow Mill Gardens</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <style>    
+    /* .googleMap{
+      
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="navbar" id="navbtn">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="location.html" class="active">Find Us</a>
+    <a href="products.html">Products</a>
+    <a href="vegies.html">Vegetables</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="more.html">More</a>
+    <a href="javascript:void(0);" class="icon" onclick="selected()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <script>
+    function selected() {
+      var x = document.getElementById("navbtn");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
+
+  <iframe class="googleMap"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d133929.76049067758!2d-96.468880975797!3d49.886122246811055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea9f0000000001%3A0xf0729bc784b1f77!2sRainbow%20Mill%20Gardens!5e0!3m2!1sen!2sca!4v1578934202344!5m2!1sen!2sca"
+    width="700" height="550" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+</body>
+
+</html>

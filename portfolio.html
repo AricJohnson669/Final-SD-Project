@@ -1,0 +1,87 @@
+<!--
+    Name: Aric Johnson
+    Course: Web Development (CSS)
+    Teacher: Mr.Hardman
+    School: Pembina Trails Early College (PTEC)
+    Date Last Modified: 11/17/2019
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rainbow Mill Gardens</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <style>
+    #grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(1fr));
+      grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .grid-item {
+      padding: 10px;
+      /* text-align: center; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar" id="navbtn">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
+    <a href="location.html">Find Us</a>
+    <a href="products.html">Products</a>
+    <a href="vegies.html">Vegetables</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="more.html">More</a>
+    <a href="javascript:void(0);" class="icon" onclick="selected()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div>
+
+  </div>
+
+  <div id="gird-container">
+    <a href="images/flowers1.jpg">
+      <img src="images/flowers1.jpg">
+    </a>
+    <a href="images/flowers2.jpg">
+      <img src="images/flowers2.jpg">
+    </a>
+    <a href="images/flowers3.jpg">
+      <img src="images/flowers3.jpg">
+    </a>
+    <a href="images/flowers4.jpg">
+      <img src="images/flowers4.jpg">
+    </a>
+    <a href="images/flowers5.jpg">
+      <img src="images/flowers5.jpg">
+    </a>
+    <a href="images/flowers6.jpg">
+      <img src="images/flowers6.jpg">
+    </a>
+    <a href="images/flowers7.jpg">
+      <img src="images/flowers7.jpg">
+    </a>
+    <a href="images/flowers8.jpg">
+      <img src="images/flowers8.jpg">
+    </a>
+  </div>
+
+  <script>
+    function selected() {
+      var x = document.getElementById("navbtn");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

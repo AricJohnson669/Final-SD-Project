@@ -1,0 +1,115 @@
+<!--
+    Name: Aric Johnson
+    Course: Web Development (CSS)
+    Teacher: Mr.Hardman
+    School: Pembina Trails Early College (PTEC)
+    Date Last Modified: 11/17/2019
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rainbow Mill Gardens</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <style>
+    .contact-p {
+      padding-top: 10%;
+      padding-left: 10%;
+      padding-bottom: 10%;;
+      font-size: 20px;
+      color: whitesmoke;
+      text-decoration: none;
+    }
+
+    #li-ttl {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="navbar" id="navbtn">
+      <a href="index.html">Home</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="location.html">Find Us</a>
+      <a href="products.html">Products</a>
+      <a href="vegies.html">Vegetables</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="more.html">More</a>
+      <a href="javascript:void(0);" class="icon" onclick="selected()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+
+  <script>
+    function selected() {
+      var x = document.getElementById("navbtn");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="slideIndicator">1 / 3</div>
+      <img src="images/slideshow1.jpg" style="width: 100%">
+      <div class="text">Rainbow Mill Gardens</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slideIndicator">2 / 3</div>
+      <img src="images/slideshow2.jpg" style="width: 100%">
+      <div class="text">Rainbow Mill Gardens</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="slideIndicator">3 / 3</div>
+      <img src="images/slideshow3.jpg" style="width: 100%">
+      <div class="text">Rainbow Mill Gardens</div>
+    </div>
+
+  </div>
+  <br>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 5000); 
+    }
+  </script>
+
+  <div class="contact-p">
+    <p>
+      <a id="li-ttl">Phone</a><br>
+      <br>
+      -(204) 866-3000<br>
+      <br>
+      <a id="li-ttl">Cell</a><br>
+      <br>
+      -(204) 793-0294<br>
+      <br>
+      <a id="li-ttl">Email</a><br>
+      <br>
+      -rainbowmillgardens@gmail.com<br>
+    </p>
+  </div>
+</body>
+
+</html>
