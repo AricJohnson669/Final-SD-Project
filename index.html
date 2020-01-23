@@ -1,18 +1,16 @@
 <!--
     Name: Aric Johnson
-    Course: Web Development (Final Project)
+    Course: Web Development (CSS)
     Teacher: Mr.Hardman
     School: Pembina Trails Early College (PTEC)
     Date Last Modified: 11/17/2019
 -->
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Rainbow Mill Gardens</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <style>
         body{
             width: 100%;
@@ -27,23 +25,23 @@
         }
     </style>
 </head>
+
 <body>
     <div class="navbar" id="navbtn">
         <a href="index.html" class="active">Home</a>
         <a href="contact.html">Contact</a>
         <a href="portfolio.html">Portfolio</a>
+        <a href="location.html">Find Us</a>
         <a href="products.html">Products</a>
+        <a href="vegies.html">Vegetables</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="more.html">More</a>
         <a href="javascript:void(0);" class="icon" onclick="selected()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
-    <header>
-        <h3 class="title">Welcome</h3>
-    </header>
-    <main>
-        <h3 class="sub-title">To Rainbow Mill Gardens</h3>
-    </main>
-    <script>
+      
+      <script>
       function selected() {
         var x = document.getElementById("navbtn");
         if (x.className === "navbar") {
@@ -53,5 +51,15 @@
         }
       }
       </script>
+
+    <header>
+        <h3 class="title">Welcome</h3>
+    </header>
+
+    <main>
+        <h3 class="sub-title">To Rainbow Mill Gardens</h3>
+    </main>
+
 </body>
+
 </html>

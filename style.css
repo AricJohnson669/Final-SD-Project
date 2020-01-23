@@ -231,6 +231,18 @@ main {
   -moz-animation: fade-in-nav 6s 1;
 }
 
+/* Styling my "Top" button on my gallery page. */
+.top-button {
+  font-size: 20px;
+  cursor: pointer;
+  color: whitesmoke;
+  text-decoration: none;
+  animation: fade-in-nav 6s 1;
+  -webkit-animation: fade-in-nav 6s 1;
+  -ms-animation: fade-in-nav 6s 1;
+  -moz-animation: fade-in-nav 6s 1;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -239,7 +251,6 @@ main {
 /* Styling the slideshow containers on my website. */
 .slideshow-container {
   padding-top: 8%;
-  padding-bottom: 10%;
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -276,6 +287,7 @@ main {
 /* Styling the caption text */
 .text {
   color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.4);
   font-size: 15px;
   padding: 8px 12xp;
   position: absolute;
